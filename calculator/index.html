@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Простий калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc">
+    <h1>Калькулятор</h1>
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button data-action="clear">C</button>
+      <button data-action="delete">⌫</button>
+      <button data-action="operator">/</button>
+      <button data-action="operator">*</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button data-action="operator">-</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button data-action="operator">+</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button data-action="equals" class="equals">=</button>
+
+      <button class="zero">0</button>
+      <button data-action="decimal">.</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

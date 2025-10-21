@@ -1,0 +1,12 @@
+:root{--bg:#f3f4f6;--panel:#ffffff;--accent:#2563eb;--text:#111827}
+*{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{background:var(--bg);display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+.calc{width:320px;background:var(--panel);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.08)}
+h1{font-size:18px;margin:0 0 12px;color:var(--text);text-align:center}
+.display{height:64px;background:#0f172a;color:#fff;font-size:28px;border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:flex-end;margin-bottom:12px}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+button{padding:14px;border-radius:8px;border:0;background:#eef2ff;color:var(--text);font-size:16px;cursor:pointer}
+button:hover{filter:brightness(0.98)}
+button[data-action="operator"]{background:#fde68a}
+button[data-action="equals"]{background:var(--accent);color:#fff;grid-row:4/6}
+button.zero{grid-column:1/3}
